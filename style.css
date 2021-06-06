@@ -1,0 +1,15 @@
+@import "normalize.css";
+
+:root {
+  --white: #d3d6db;
+  --black: #303841;
+  --grey: #3a4750;
+  --red: #be3144;
+
+  --bp-sm: 540px;
+  --bp-md: 720px;
+  --bp-lg: 960px;
+  --bp-xl: 1140px;
+  --bp-xxl: 1320px;
+
+}
