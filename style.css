@@ -1,20 +1,31 @@
 @import "normalize.css";
 
 :root {
-  --white: #d3d6db;
-  --black: #292a31;
-  --grey: #2e383f;
-  --red: #be3144;
+  --main-black: #333;
+  --main-black-hover: #444;
+  --main-red: #ff4040;
+  --main-red-hover: #ff5050;
+  --main-green: #3cce7b;
+  --main-green-hover: #38da7e;
+  --main-purple: #9954d8;
+  --main-yellow: #f2b800;
+  --main-yellow-hover: #ffc50e;
+  --main-text: #eee;
+  --light-text: #fff;
+  --main-button: #222;
+  --input: #222;
+  --input-active: #222;
+  --background-tr: transparent;
+  --background-first: #333;
+  --background-second: #2c2c2c;
+  --background-third: #292929;
+  --background-fourth: #222;
+  --border-first: #444;
+  --border-second: #4b4b4b;
+  --border-third: #555;
+  --border-fourth: #999;
+  --border-fifth: #aaa;
 
-  --white: #eeebdd;
-  /* --black: #1b1717; */
-  --grey: #810000;
-  --red: #ce1212;
-
-  /* --white: #dbedf3;
-  --black: #283149;
-  --grey: #404b69;
-  --red: #00818a; */
 
   --bp-sm: 540px;
   --bp-md: 720px;
@@ -24,21 +35,91 @@
 
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+
+
+
 body {
-  background-color: var(--black);
-  color: var(--white);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.375;
+  color: var(--main-text);
+  background-color: var(--background-fourth);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
-  max-width: var(--bp-xxl);
-  margin: 0 auto;
-  background-color: var(--grey);
+  width: var(--bp-xxl);
+  max-width: 100%;
+  margin: auto;
+  background-color: var(--background-first);
 }
 
 .btn {
   width: 150px;
   height: 50px;
-  background-color: var(--red);
+  color: var(--main-text);
+  background-color: var(--main-red);
   border: none;
   border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: var(--main-red-hover);
+  cursor: pointer;
+}
+
+
+
+.header-page {
+
+}
+
+.header-page__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-page__end {
+  display: flex;
+  align-items: center;
+}
+
+.header-page__nav {
+  margin-right: 15px;
+}
+
+.header-page__ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.header-page__link {
+  color: var(--main-text);
+  text-decoration: none;
+  display: block;
+  padding: 15px 35px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.header-page__link:hover {
+  color: var(--main-text);
+  background-color: var(--main-red-hover);
 }
