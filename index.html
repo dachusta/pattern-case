@@ -5,9 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 
-  <title>Document</title>
+  <title>Pattern</title>
 </head>
 <body>
 
@@ -27,7 +27,7 @@
       <nav class="header-page__nav">
         <ul class="header-page__ul">
           <li class="header-page__li">
-            <a class="header-page__link" href="#" data-scroll-to="section-catalog">
+            <a class="header-page__link" href="index.html" data-scroll-to="section-catalog">
               <span class="header-page__text">Home</span>
             </a>
           </li>
@@ -53,7 +53,7 @@
 <!-- section-top -->
 <section class="section-top">
   <div class="container section-top__container">
-    <h1 class="section-top__title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, dolore. Excepturi rerum, maiores quae, accusantium rem minima, laudantium ducimus tenetur ut est eveniet enim labore suscipit in voluptas maxime beatae.</h1>
+    <h1 class="section-top__title">Reusable Components</h1>
   </div>
 </section>
 <!-- /.section-top -->
@@ -63,17 +63,26 @@
 <!-- section-collection -->
 <section class="section-collection">
   <div class="container section-collection__container">
-
     <div class="collection">
+
+      <a href="tooltip.html" class="card">
       <div class="collection__item">
-        <div class="card collection__card">
-          <img src="#" alt="" class="card__img">
-          <div class="card__content">
-            <h3 class="card__title">Lorem, ipsum dolor.</h3>
-            <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, quo?</p>
+          <div class="card collection__card">
+            <div class="tooltip">
+              <div class="tooltip__icon">
+                <img src="img/information.svg" alt="" class="card__img">
+              </div>
+              <div class="tooltip__help">
+                <div class="tooltip__text">Helper text</div>
+              </div>
+            </div>
+            <div class="card__content">
+              <h3 class="card__title">Lorem, ipsum dolor.</h3>
+              <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, quo?</p>
+            </div>
           </div>
         </div>
-      </div>
+      </a>
 
       <div class="collection__item">
         <div class="card collection__card">
@@ -95,18 +104,8 @@
         </div>
       </div>
 
-      <div class="collection__item">
-        <div class="card collection__card">
-          <img src="#" alt="" class="card__img">
-          <div class="card__content">
-            <h3 class="card__title">Lorem, ipsum dolor.</h3>
-            <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, quo?</p>
-          </div>
-        </div>
-      </div>
 
     </div>
-
   </div>
 </section>
 <!-- /.section-collection -->
