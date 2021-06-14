@@ -1,0 +1,45 @@
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip__icon {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  position: relative;
+}
+
+.tooltip__help {
+  width: 130px;
+  height: 45px;
+  border-radius: 10px;
+  background: var(--main-red);
+  position: absolute;
+  bottom: 100%;
+  transform: translate(-50%, -10px);
+  left: 50%;
+  color: var(--main-text);
+  padding: 13px 21px;
+  opacity: 0;
+  transition: opacity 0.2s linear, transform 0.1s linear;
+  pointer-events: none;
+}
+
+.tooltip:hover .tooltip__help {
+  opacity: 1;
+  transform: translate(-50%, -13px);
+  pointer-events: all;
+}
+
+.tooltip__help:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  border: 7px solid transparent;
+  border-top: 7px solid var(--main-red);
+}
+
