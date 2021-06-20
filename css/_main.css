@@ -1,0 +1,66 @@
+:root {
+  --main-black: #333;
+  --main-black-hover: #444;
+  --main-red: #ff4040;
+  --main-red-hover: #ff5050;
+  --main-green: #3cce7b;
+  --main-green-hover: #38da7e;
+  --main-purple: #9954d8;
+  --main-yellow: #f2b800;
+  --main-yellow-hover: #ffc50e;
+  --main-text: #eee;
+  --light-text: #fff;
+  --main-button: #222;
+  --input: #222;
+  --input-active: #222;
+  --background-tr: transparent;
+  --background-first: #333;
+  --background-second: #2c2c2c;
+  --background-third: #292929;
+  --background-fourth: #222;
+  --border-first: #444;
+  --border-second: #4b4b4b;
+  --border-third: #555;
+  --border-fourth: #999;
+  --border-fifth: #aaa;
+
+
+
+  --bp-sm: 540px;
+  --bp-md: 720px;
+  --bp-lg: 960px;
+  --bp-xl: 1140px;
+  --bp-xxl: 1320px;
+
+}
+
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.375;
+  color: var(--main-text);
+  background-color: var(--background-fourth);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: var(--bp-xxl);
+  max-width: 100%;
+  margin: auto;
+}
+
